@@ -63,6 +63,6 @@ if (reserveButton) {
 
     
     // Remove the "../" prefix if booking.html is in the main root folder
-    window.location.href = "qtripProject.html";
+    window.location.href = "index.html";
   });
 }
