@@ -1,0 +1,31 @@
+ /* Container for the adventure card */
+ .adventure-card {
+    border-radius: 10px;
+    overflow: hidden; /* Important for the zoom effect */
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .adventure-card:hover {
+    transform: translateY(-5px); /* Card pops up slightly */
+  }
+  
+  /* Image scaling effect */
+  .image-wrapper {
+    overflow: hidden;
+  }
+  
+  .adventure-card img {
+    min-height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .adventure-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card-body {
+    padding: 1rem;
+    background-color: white;
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QTrip - Adventure Detail</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="../adventures.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="../">Qtrip</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link active" id="explore-nav-link" href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Detail Content Section -->
+    <section class="container my-5">
+      <!-- Breadcrumb navigation -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item"><a id="breadcrumb-adventures-link" href="./adventures.html">Adventures</a></li>
+          <li class="breadcrumb-item active" id="breadcrumb-adventure-name">Detail</li>
+        </ol>
+      </nav>
+
+      <!-- Adventure Title and Subtitle -->
+      <div class="row">
+        <div class="col-12">
+          <h1 id="adventure-name" class="fw-bold"></h1>
+          <p id="adventure-subtitle" class="text-muted lead"></p>
+        </div>
+      </div>
+
+      <!-- Main Layout Row -->
+      <div class="row mt-4">
+        <!-- Left Column: Image and Description -->
+        <div class="col-lg-8 mb-4">
+          <div class="mb-4">
+            <img id="adventure-image" class="w-100 rounded shadow-sm" style="max-height: 450px; object-fit: cover;" alt="Adventure Image">
+          </div>
+          <hr class="my-4">
+        </div>
+
+        <!-- Right Column: Booking Card / Form -->
+        <div class="col-lg-4">
+          <div class="card shadow-sm border-0 p-4">
+            <h4 class="fw-bold mb-3">Book Experience</h4>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <span class="text-muted">Price per head</span>
+              <h3 id="adventure-cost" class="fw-bold text-primary mb-0"></h3>
+            </div>
+            <button id="reserve-btn" class="btn btn-primary w-100 py-2 fw-semibold">Reserve Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  
+  <!-- Link the Detail JavaScript file -->
+  <script type="module" src="detail.js"></script>
+</body>
+</html>

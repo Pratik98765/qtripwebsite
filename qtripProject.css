@@ -1,0 +1,52 @@
+#data {
+  padding-top: 15px;
+}
+
+.hero-section {
+  color: white;
+  height: 40vh;
+  width: 100%;
+  background-image: url("https://cdn.wallpapersafari.com/27/37/qN5gKX.jpg");
+}
+
+.form-control {
+  width: 60%;
+}
+
+.adventure-card {
+  border-radius: 10px;
+  overflow: hidden; /* Important for the zoom effect */
+  border: none;
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.adventure-card:hover {
+  transform: translateY(-5px); /* Card pops up slightly */
+}
+
+.adventure-card img {
+  min-height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.adventure-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0; /* Stick to the bottom */
+  left: 0;
+  width: 100%; /* Stretch across the card */
+  color: white;
+  z-index: 10;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.8)
+  ); /* Makes text readable */
+}
